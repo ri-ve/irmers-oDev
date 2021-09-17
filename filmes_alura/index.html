@@ -1,19 +1,31 @@
-<div class="container">
-   
-    <link rel="stylesheet" href="style.css">
+<html>
 
-    
-      <button type="submit" onclick="anime()" id = "vai">Animes</button>
-      <h2 class="resultado" id="resultado"></h2>
+<head>
+  <title>
+    Imersão Dev - Aula 05
+  </title>
+<link rel="stylesheet" href="style.css">
+<script src="scripts/main.js"></script>
+</head>
 
+<body>
+  <div class="container">
     <h1 class="page-title">
-      RiverFlix
+      Aluraflix
     </h1>
     <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+    <p class="page-subtitle">
+      Qual seu filme favorito?
+    </p>
+    <div class="form-wrapper">
+      <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
+      <button onClick="adicionarFilme()">Adicionar Filme</button>
+    </div>
   </div>
+  <div id="listaFilmes"></div>
   <a href="https://alura.com.br/" target="_blank">
     <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-    
-    <script src="scripts/main.js"></script>
-   
   </a>
+</body>
+
+</html>
